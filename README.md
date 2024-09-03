@@ -13,6 +13,8 @@
 Greetings! I'm süleyman, a seasoned junior back-end developer proficient in .Net , React, React-Native,CyberSecurtiy,Devops 
 I've been working as a freelance developer for a while now.
 I am also using technologies like Docker and Git and follow SOLID principles and strive for clean code in my projects.
+My personal web site 
+<a href="kodkoyu.site" />
 
 </p>
 
@@ -33,19 +35,8 @@ I am also using technologies like Docker and Git and follow SOLID principles and
     <a href="#"><img alt="MariaDB" src ="https://img.shields.io/badge/MariaDB-003545.svg?logo=MariaDB&logoColor=white"></a>
 </p>
 
-<h3 align="left">VPN Servers</h3>
-<p>
-    <a href="#"><img alt="WireGuard" src="https://img.shields.io/badge/WireGuard-88171A?logo=WireGuard&logoColor=white"></a>
-    <a href="#"><img alt="OpenVPN" src="https://img.shields.io/badge/OpenVPN-EA7E20?logo=OpenVPN&logoColor=white"></a>
-</p>
 
-<h3 align="left">Virtualization Platforms</h3>
-<p>
-    <a href="#"><img alt="QEMU" src="https://img.shields.io/badge/QEMU-FF6600?logo=QEMU&logoColor=white"></a>
-    <a href="#"><img alt="VirtualBox" src="https://img.shields.io/badge/VirtualBox-183A61?logo=VirtualBox&logoColor=white"></a>
-    <a href="#"><img alt="VMware" src="https://img.shields.io/badge/VMware-607078?logo=VMware&logoColor=white"></a>
-    <a href="#"><img alt="VMwareESXI" src="https://img.shields.io/badge/VMware ESXI-607078?logo=VMware&logoColor=white"></a>
-</p>
+
 
 <h3 align="left">Software and tools</h3>
 <p>
@@ -96,17 +87,7 @@ I am also using technologies like Docker and Git and follow SOLID principles and
     <a href="#"><img alt="Google Cloud" src="https://img.shields.io/badge/Google-Cloud-4285F4.svg?logo=googlecloud&logoColor=white"></a>
 </p>
 
-## Current project(s) I'm working/worked on
 
-- [Supervision](https://github.com/roboflow/supervision)
-- [Supervision Conda Forge](https://github.com/conda-forge/supervision-feedstock)
-- [GFPGAN-ncnn-vulkan](https://github.com/onuralpszr/GFPGAN-ncnn-vulkan)
-- [CvCamera-Mobile](https://github.com/onuralpszr/CvCamera-Mobile)
-- [Sceneview-android](https://github.com/SceneView/sceneview-android)
-- [Sceneform-android from Sceneview Team](https://github.com/SceneView/sceneform-android)
-- [Nvidia Auto Installer](https://github.com/t0xic0der/nvidia-auto-installer-for-fedora)
-- [Ultralytics](https://github.com/ultralytics/ultralytics)
-- [Yolo-World](https://github.com/AILab-CVC/YOLO-World)
 
 ## Useful links
 
