@@ -93,27 +93,9 @@ My personal web site
 
 If you want to stay in touch with me, these links can be useful.
 
-- [LinkedIn](https://www.linkedin.com/in/osezer/)
-- [AskFedora account](https://ask.fedoraproject.org/u/thunderbirdtr/)
-- [Twitter](https://twitter.com/onuralpszr)
-- [Fedora Pagure Account](https://pagure.io/user/thunderbirdtr)
-- [Src.Fedora Account](https://src.fedoraproject.org/user/thunderbirdtr/)
-- [Credly](https://www.credly.com/users/onuralp-sezer/badges)
-- [Google Developer Account](https://developers.google.com/profile/u/onuralpsezer)
-- [Personal Fedora wiki page](https://fedoraproject.org/wiki/User:Thunderbirdtr)
-- [Fedora Contribution Badges](https://badges.fedoraproject.org/user/thunderbirdtr)
-- [Google Cloud Skill Boost Profile](https://www.cloudskillsboost.google/public_profiles/aa921c43-e963-4266-aa26-e7465dab9aec)
-- [HuggingFace](https://huggingface.co/onuralpszr)
+- [LinkedIn](https://www.linkedin.com/in/slymanmrcan/)
+- [Twitter](https://twitter.com/slymanmrcan)
+- [Google Developer Account](https://developers.google.com/profile/u/slymanmrcan)
+  
 
-## Certifcations
 
-- [Tensorflow Developer](https://www.credential.net/5d4c2d99-4c0b-4990-9399-2bdb496f7d4f#gs.axwujf)
-
-![](./profile-3d-contrib/profile-night-rainbow.svg)
-
-[![@osezer's Holopin board](https://holopin.me/osezer)](https://holopin.io/@osezer)
-
-## Mentorship Programs
-
-- [Outreachy](https://github.com/outreachy)
-- [OpenTR](https://github.com/OpenTRFoundation/OpenTR)
