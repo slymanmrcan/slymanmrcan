@@ -18,8 +18,10 @@ I am also using technologies like Docker and Git and follow SOLID principles and
 </p>
 <p>
     Some of my projects are here and so on.
-    <a href="homelibraryproject.azurewebsites.net">My Library Project</a>
-    <a href="https://slymanmrcan.github.io/personalwebsite/">My Personal WebSite </a>
+    <ul>
+        <li><a href="homelibraryproject.azurewebsites.net">My Library Project</a></li>
+        <li><a href="https://slymanmrcan.github.io/personalwebsite/">My Personal WebSite </a></li>
+    </ul>
 </p>
 
 </p>
