@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://github.com/slymanmrcan"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=2000&color=4A71D9&center=true&vCenter=true&width=435&lines=Hi+there%F0%9F%91%8B!+I+am+Onuralp;Nice+to+meet+you!" alt="Typing SVG" /></a>
+<a href="https://github.com/slymanmrcan"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=2000&color=4A71D9&center=true&vCenter=true&width=435&lines=Hi+there%F0%9F%91%8B!+I+am+Süleyman;Nice+to+meet+you!" alt="Typing SVG" /></a>
 </p>
 
 <p align="center">
@@ -13,8 +13,14 @@
 Greetings! I'm süleyman, a seasoned junior back-end developer proficient in .Net , React, React-Native,CyberSecurtiy,Devops 
 I've been working as a freelance developer for a while now.
 I am also using technologies like Docker and Git and follow SOLID principles and strive for clean code in my projects.
-My personal web site 
-<a href="kodkoyu.site" />
+<p>
+    <a href="kodkoyu.site" target="blank">My personal web site </a>
+</p>
+<p>
+    Some of my projects are here and so on.
+    <a href="homelibraryproject.azurewebsites.net">My Library Project</a>
+    <a href="https://slymanmrcan.github.io/personalwebsite/">My Personal WebSite </a>
+</p>
 
 </p>
 
