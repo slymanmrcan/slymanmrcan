@@ -33,8 +33,8 @@
 
 ## 👋 About
 
-Backend-focused engineer in the .NET ecosystem, building REST APIs, data layers, and deployment-ready setups.  
-I like clean architecture, automation, and pragmatic DevOps practices.
+Backend and DevOps-focused engineer in the .NET ecosystem, building REST APIs, data layers, and deployment-ready platforms.  
+I like clean architecture, automation, and pragmatic infrastructure decisions.
 
 ---
 
@@ -43,21 +43,35 @@ I like clean architecture, automation, and pragmatic DevOps practices.
 ```csharp
 public class Suleyman
 {
-    public string Role => ".NET Backend / Cloud Infrastructure";
+    public string Role => "Backend Engineer / DevOps";
+    public string Location => "Turkey";
     public string[] Focus => new[]
     {
         "REST API Design",
         "Clean Architecture",
-        "PostgreSQL & MSSQL",
-        "Dockerized Development",
+        ".NET Core",
+        "Go (backend services)",
+        "React (frontend side)",
+        "PostgreSQL",
+        "Docker",
         "GitHub Actions CI/CD",
-        "Terraform (IaC) basics",
-        "Cloud Deployments (AWS / Oracle Cloud)"
+        "Linux Operations"
     };
 
-    public string Motto => "Simple systems scale. Automated systems survive.";
+    public string Motto => "Reliable backend first. Automated delivery always.";
 }
 ```
+
+---
+
+## ⚡ Current Mode
+
+| Key | Value |
+| --- | --- |
+| Base | Turkey |
+| Core Focus | Backend & DevOps |
+| Stack Priority | .NET Core, Go, React |
+| Open To | Backend / DevOps collaborations |
 
 ---
 
@@ -99,7 +113,7 @@ Multi-tenant backend systems, Terraform-based GitHub automation, reusable .NET l
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=slymanmrcan&show_icons=true&theme=dark&hide_border=true" alt="GitHub stats">
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=slymanmrcan&theme=dark&hide_border=true" alt="GitHub streak">
+  <img width="49%" src="https://streak-stats.demolab.com?user=slymanmrcan&theme=dark&hide_border=true" alt="GitHub streak">
 </p>
 <p align="center">
   <img width="95%" src="https://github-profile-trophy.vercel.app/?username=slymanmrcan&theme=darkhub&no-frame=true&row=1&column=7" alt="GitHub trophies">
@@ -115,8 +129,8 @@ Multi-tenant backend systems, Terraform-based GitHub automation, reusable .NET l
 
 ## 🔗 Contact
 
-- Website: https://smtechlab.net
-- GitHub Org: https://github.com/smtechlabteam
+- Location: Turkey
+- Focus: Backend & DevOps
 - LinkedIn: https://linkedin.com/in/slymanmrcan
 - E-mail: slymanmrcan@gmail.com
 
