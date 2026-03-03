@@ -75,12 +75,12 @@ public class Suleyman
   <a href="https://github.com/slymanmrcan/BaseLibraryKit">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=slymanmrcan&repo=BaseLibraryKit&theme=dark&hide_border=true" alt="BaseLibraryKit pin">
   </a>
-  <a href="https://github.com/slymanmrcan/eduCenter">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=slymanmrcan&repo=eduCenter&theme=dark&hide_border=true" alt="eduCenter pin">
-  </a>
+  <img alt="eduCenter private" src="https://img.shields.io/badge/eduCenter-Private%20%7C%20Commercial-3b3b3b?style=for-the-badge">
 </p>
 
 Multi-tenant backend systems, Terraform-based GitHub automation, reusable .NET libraries, and offline-first mobile experiments.
+
+> Note: `eduCenter` and `PrivFlow` are currently commercial/private repositories. Source code will be shared after public release.
 
 ---
 
@@ -124,17 +124,17 @@ Multi-tenant backend systems, Terraform-based GitHub automation, reusable .NET l
 
 ---
 
-## 🧊 3D Contribution Graph (Nereden Veri Cekiyor?)
+## 🧊 3D Contribution Graph (Data Source)
 
-Bu 3D gorseller dogrudan GitHub katkı gecmisinden uretiliyor.
+These 3D visuals are generated directly from your GitHub contribution history.
 
 - Workflow: `.github/workflows/gh-profile-3d-contrib.yml`
 - Action: `yoshi389111/github-profile-3d-contrib@0.7.0`
-- Zamanlama: her gun `18:00 UTC` (`21:00` Turkiye)
-- Kullanici: `${{ github.repository_owner }}`
+- Schedule: every day at `18:00 UTC` (`21:00` Türkiye time)
+- Username: `${{ github.repository_owner }}`
 - Token: `${{ secrets.GITHUB_TOKEN }}`
 
-Action, GitHub API/GraphQL uzerinden katki takvimini cekip `profile-3d-contrib/` altinda birden fazla SVG tema olusturur.
+The action pulls contribution data through the GitHub API/GraphQL and creates multiple SVG themes under `profile-3d-contrib/`.
 
 ### Active Theme (dark/light auto switch)
 
