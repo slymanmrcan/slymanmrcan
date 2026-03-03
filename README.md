@@ -81,28 +81,17 @@ public class Suleyman
 Multi-tenant backend systems, Terraform-based GitHub automation, reusable .NET libraries, and offline-first mobile experiments.
 
 > Note: `eduCenter` and `PrivFlow` are currently commercial/private repositories. Source code will be shared after public release.
+> Note: Language labels on pinned cards are auto-detected by GitHub Linguist and may not reflect my primary stack.
 
 ---
 
 ## 🧰 Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=dotnet,cs,postgres,mysql,redis,docker,linux,nginx,terraform,githubactions,git,react,ts,nodejs&perline=7" alt="skills">
+  <img src="https://skillicons.dev/icons?i=dotnet,go,react,postgres,docker,githubactions,linux,git&perline=8" alt="skills">
 </p>
 
-<details>
-  <summary><b>Extra badges</b></summary>
-  <br/>
-  <p>
-    <img alt="dotnet" src="https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white">
-    <img alt="aspnet" src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white">
-    <img alt="postgres" src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white">
-    <img alt="docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white">
-    <img alt="terraform" src="https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white">
-    <img alt="gha" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white">
-    <img alt="linux" src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=111">
-  </p>
-</details>
+<p align="center"><i>Primary focus: .NET Core, Go, React</i></p>
 
 ---
 
@@ -121,54 +110,6 @@ Multi-tenant backend systems, Terraform-based GitHub automation, reusable .NET l
   <br/>
   <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=slymanmrcan&theme=github-dark&hide_border=true" alt="activity graph">
 </details>
-
----
-
-## 🧊 3D Contribution Graph (Data Source)
-
-These 3D visuals are generated directly from your GitHub contribution history.
-
-- Workflow: `.github/workflows/gh-profile-3d-contrib.yml`
-- Action: `yoshi389111/github-profile-3d-contrib@0.7.0`
-- Schedule: every day at `18:00 UTC` (`21:00` Türkiye time)
-- Username: `${{ github.repository_owner }}`
-- Token: `${{ secrets.GITHUB_TOKEN }}`
-
-The action pulls contribution data through the GitHub API/GraphQL and creates multiple SVG themes under `profile-3d-contrib/`.
-
-### Active Theme (dark/light auto switch)
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green.svg">
-    <img alt="3D contribution graph" src="./profile-3d-contrib/profile-night-rainbow.svg">
-  </picture>
-</p>
-
-### Theme Preview
-
-<p align="center">
-  <img width="49%" alt="night-rainbow" src="./profile-3d-contrib/profile-night-rainbow.svg">
-  <img width="49%" alt="night-green" src="./profile-3d-contrib/profile-night-green.svg">
-</p>
-<p align="center">
-  <img width="49%" alt="season-animate" src="./profile-3d-contrib/profile-season-animate.svg">
-  <img width="49%" alt="south-season-animate" src="./profile-3d-contrib/profile-south-season-animate.svg">
-</p>
-
-### Quick Theme Switch
-
-```markdown
-![](./profile-3d-contrib/profile-night-rainbow.svg)
-```
-
-Alternatives:
-
-- `./profile-3d-contrib/profile-green.svg`
-- `./profile-3d-contrib/profile-night-view.svg`
-- `./profile-3d-contrib/profile-gitblock.svg`
-- `./profile-3d-contrib/profile-season.svg`
 
 ---
 
