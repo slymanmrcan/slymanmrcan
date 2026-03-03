@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Süleyman Mercan | Full-Stack Developer</title>
+  <meta name="description" content="Süleyman Mercan - Full-Stack Developer | .NET Core, React, DevOps, CI/CD, Docker, Terraform" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-soft: #111827;
+      --card: #020617;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.2);
+      --text: #e5e7eb;
+      --text-soft: #9ca3af;
+      --border: #1f2937;
+      --badge-bg: #111827;
+      --badge-border: #1f2937;
+      --danger: #ef4444;
+      --muted: #6b7280;
+      --shadow-soft: 0 24px 60px rgba(15, 23, 42, 0.8);
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+      "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1e293b 0, #020617 45%, #000 100%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      padding: 32px 16px 48px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 960px;
+      background: linear-gradient(135deg, rgba(15,23,42,0.98), rgba(2,6,23,0.98));
+      border-radius: 24px;
+      border: 1px solid rgba(148,163,184,0.12);
+      box-shadow: var(--shadow-soft);
+      padding: 32px 28px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Soft gradient overlay */
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(56,189,248,0.08), transparent 55%),
+        radial-gradient(circle at 100% 0%, rgba(99,102,241,0.08), transparent 55%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    .page-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(148,163,184,0.2);
+    }
+
+    .identity {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .name {
+      font-size: 1.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .role {
+      font-size: 0.98rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(15,23,42,0.9);
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(56,189,248,0.25);
+      margin-top: 6px;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 12px rgba(34,197,94,0.8);
+    }
+
+    .contact {
+      text-align: right;
+      min-width: 260px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.9rem;
+    }
+
+    .contact-row {
+      color: var(--text-soft);
+    }
+
+    .contact strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+
+    .link-pill {
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148,163,184,0.3);
+      padding: 5px 11px;
+      font-size: 0.8rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text-soft);
+      background: rgba(15,23,42,0.9);
+    }
+
+    .link-pill span.dots {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .link-pill:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+      gap: 24px;
+    }
+
+    section {
+      margin-bottom: 18px;
+    }
+
+    h2.section-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: radial-gradient(circle at top, rgba(15,23,42,0.6), rgba(15,23,42,0.95));
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 14px 16px 14px;
+    }
+
+    .about-text {
+      font-size: 0.93rem;
+      color: var(--text-soft);
+    }
+
+    .about-text strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .experience-item,
+    .education-item,
+    .project-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 8px 0;
+    }
+
+    .experience-item + .experience-item,
+    .education-item + .education-item,
+    .project-item + .project-item {
+      border-top: 1px dashed rgba(55,65,81,0.7);
+      margin-top: 8px;
+      padding-top: 10px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .item-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .item-subtitle {
+      font-size: 0.86rem;
+      color: var(--text-soft);
+    }
+
+    .item-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .item-body {
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      margin-top: 4px;
+    }
+
+    .item-body ul {
+      padding-left: 18px;
+      margin-top: 2px;
+    }
+
+    .item-body li {
+      margin-bottom: 2px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .skill-pill {
+      font-size: 0.78rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--badge-border);
+      background: var(--badge-bg);
+      padding: 3px 9px;
+      color: var(--text-soft);
+    }
+
+    .skills-category {
+      margin-bottom: 6px;
+    }
+
+    .skills-category-title {
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .project-item-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .project-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .project-tagline {
+      font-size: 0.82rem;
+      color: var(--accent);
+    }
+
+    .project-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .project-desc {
+      font-size: 0.86rem;
+      color: var(--text-soft);
+      margin-top: 4px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .project-tag {
+      font-size: 0.76rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(56,189,248,0.25);
+      background: rgba(15,23,42,0.9);
+      padding: 2px 8px;
+      color: var(--text-soft);
+    }
+
+    .project-links {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .project-link {
+      font-size: 0.78rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148,163,184,0.35);
+      padding: 3px 9px;
+      text-decoration: none;
+      color: var(--text-soft);
+    }
+
+    .project-link.placeholder {
+      border-style: dashed;
+      color: var(--muted);
+      cursor: default;
+    }
+
+    .project-link:hover:not(.placeholder) {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .side-note {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 8px;
+      border-top: 1px dashed rgba(55,65,81,0.7);
+      padding-top: 6px;
+    }
+
+    .side-note strong {
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 18px;
+      font-size: 0.76rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(148,163,184,0.18);
+      padding-top: 10px;
+    }
+
+    footer span {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 16px 8px 32px;
+      }
+      .page {
+        padding: 20px 16px 22px;
+        border-radius: 18px;
+      }
+      header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+      .contact {
+        text-align: left;
+      }
+      .links {
+        justify-content: flex-start;
+      }
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header>
+        <div class="identity">
+          <div class="role">Full-Stack Developer</div>
+          <div class="name">Süleyman MERCAN</div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Yeni projelere ve fırsatlara açık</span>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="contact-row">
+            <strong>Telefon:</strong> +90 551 952 45 00
+          </div>
+          <div class="contact-row">
+            <strong>E-posta:</strong> slymanmrcan@gmail.com
+          </div>
+          <div class="links">
+            <a class="link-pill" href="https://github.com/slymanmrcan" target="_blank" rel="noopener noreferrer">
+              <span class="dots">•••</span> GitHub / slymanmrcan
+            </a>
+            <a class="link-pill" href="https://linkedin.com/in/slymanmrcan" target="_blank" rel="noopener noreferrer">
+              <span class="dots">•••</span> LinkedIn Profili
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- SOL SÜTUN -->
+        <div>
+          <!-- HAKKIMDA -->
+          <section>
+            <h2 class="section-title">Hakkımda</h2>
+            <div class="card">
+              <p class="about-text">
+                Backend tarafında <strong>REST API, veri erişimi ve kurumsal mimari yapılar</strong> üzerinde yoğunlaşan;
+                frontend tarafında ise <strong>modern arayüz geliştirme</strong> deneyimine sahip bir geliştiriciyim.
+                Web teknolojileri, <strong>DevOps yaklaşımları</strong> ve <strong>yazılım mimarileri</strong> alanlarında
+                kendimi sürekli güncelliyor, süreç odaklı ve ölçeklenebilir çözümler üretmeye odaklanıyorum.
+              </p>
+            </div>
+          </section>
+
+          <!-- DENEYİM -->
+          <section>
+            <h2 class="section-title">Deneyim</h2>
+            <div class="card">
+              <div class="experience-item">
+                <div class="item-header">
+                  <div>
+                    <div class="item-title">Yazılım Geliştirici</div>
+                    <div class="item-subtitle">Logiting Teknoloji — Konya</div>
+                  </div>
+                  <div class="item-meta">09/2021 – 05/2022</div>
+                </div>
+                <div class="item-body">
+                  <ul>
+                    <li>Backend ve frontend projelerinde aktif rol aldım.</li>
+                    <li>API geliştirme, veri yönetimi ve temel UI implementasyonları gerçekleştirdim.</li>
+                    <li>Yazılım süreçlerinin iyileştirilmesine ve proje yapılarının olgunlaşmasına katkı sağladım.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="experience-item">
+                <div class="item-header">
+                  <div>
+                    <div class="item-title">Stajyer</div>
+                    <div class="item-subtitle">Karayolları Genel Müdürlüğü — Konya</div>
+                  </div>
+                  <div class="item-meta">01/2019 – 02/2019</div>
+                </div>
+                <div class="item-body">
+                  <ul>
+                    <li>Network ve donanım odaklı altyapı çalışmalarına katkı sundum.</li>
+                    <li>Sistem bileşenlerinin temel kurulum, izleme ve problem giderme süreçlerini gözlemledim.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- PROJELER -->
+          <section>
+            <h2 class="section-title">Projeler</h2>
+            <div class="card">
+              <!-- eduCenter -->
+              <div class="project-item">
+                <div class="project-item-title-row">
+                  <div>
+                    <div class="project-name">eduCenter — Öğrenci Takip Otomasyonu</div>
+                    <div class="project-tagline">Kurumlar için uçtan uca öğrenci yönetim platformu</div>
+                  </div>
+                  <div class="project-meta">Devam Eden Çalışma</div>
+                </div>
+                <div class="project-desc">
+                  Öğretmenler ve kurumlar için geliştirilmiş; öğrenci kayıtları, ders programı yönetimi,
+                  ödeme takibi, sınav sonuçları (TYT/AYT), ödev yönetimi, bildirim sistemi, dosya yönetimi,
+                  API key yönetimi ve dashboard raporlama modüllerini içeren kapsamlı bir öğrenci takip ve yönetim sistemi.
+                </div>
+                <div class="project-tags">
+                  <span class="project-tag">.NET Core</span>
+                  <span class="project-tag">REST API</span>
+                  <span class="project-tag">PostgreSQL</span>
+                  <span class="project-tag">Kurumsal Mimari</span>
+                  <span class="project-tag">Dashboard &amp; Raporlama</span>
+                </div>
+                <div class="project-links">
+                  <span class="project-link placeholder">GitHub linki eklenecek</span>
+                </div>
+              </div>
+
+              <!-- github-infra -->
+              <div class="project-item">
+                <div class="project-item-title-row">
+                  <div>
+                    <div class="project-name">github-infra — GitHub Repo Yönetim Otomasyonu</div>
+                    <div class="project-tagline">Topluluk repoları için otomasyon odaklı altyapı</div>
+                  </div>
+                  <div class="project-meta">Bilgisayar Kavramları Topluluğu</div>
+                </div>
+                <div class="project-desc">
+                  Bilgisayar Kavramları topluluğu kapsamında GitHub repolarının düzenlenmesini ve yönetimini
+                  kolaylaştırmak için kullanılan <strong>Terraform</strong> tabanlı bir proje üzerinde görev aldım.
+                  Repo açma, yapılandırma, erişim ve standartlaşma süreçlerinin otomasyonuna odaklandım.
+                </div>
+                <div class="project-tags">
+                  <span class="project-tag">Terraform</span>
+                  <span class="project-tag">GitHub API</span>
+                  <span class="project-tag">IaC</span>
+                  <span class="project-tag">Topluluk Altyapısı</span>
+                </div>
+                <div class="project-links">
+                  <span class="project-link placeholder">Infra reposu eklenecek</span>
+                </div>
+              </div>
+
+              <!-- PrivFlow -->
+              <div class="project-item">
+                <div class="project-item-title-row">
+                  <div>
+                    <div class="project-name">PrivFlow — Kurumsal Feedback Platformu</div>
+                    <div class="project-tagline">Çalışan–yönetici etkileşimini anonim feedback akışına çeviren platform</div>
+                  </div>
+                  <div class="project-meta">.NET Core Tabanlı</div>
+                </div>
+                <div class="project-desc">
+                  Çalışan–yönetici etkileşimlerini güvenli, anonim ve gerçek-zamanlı geri bildirim akışına dönüştüren,
+                  modern .NET Core tabanlı bir kurumsal feedback platformu. Rol bazlı yetkilendirme, oturum yönetimi,
+                  feedback kategorileri ve dashboard bileşenleri üzerinde çalışıyorum.
+                </div>
+                <div class="project-tags">
+                  <span class="project-tag">ASP.NET Core</span>
+                  <span class="project-tag">Clean Architecture</span>
+                  <span class="project-tag">SignalR (planlanan)</span>
+                  <span class="project-tag">RBAC</span>
+                  <span class="project-tag">Kurumsal Uygulama</span>
+                </div>
+                <div class="project-links">
+                  <span class="project-link placeholder">API &amp; UI reposu eklenecek</span>
+                </div>
+              </div>
+
+              <p class="side-note">
+                <strong>Not:</strong> Aktif projeler GitHub üzerinde konumlandırıldıkça ilgili bağlantılar bu sayfaya
+                eklenecektir. Yapı, yeni modül ve projeleri görünür şekilde ölçeklendirecek şekilde kurgulandı.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- SAĞ SÜTUN -->
+        <aside>
+          <!-- TEKNİK BECERİLER -->
+          <section>
+            <h2 class="section-title">Teknik Beceriler</h2>
+            <div class="card">
+              <div class="skills-category">
+                <div class="skills-category-title">Backend</div>
+                <div class="skills-grid">
+                  <span class="skill-pill">.NET Core</span>
+                  <span class="skill-pill">ASP.NET MVC</span>
+                  <span class="skill-pill">REST API</span>
+                  <span class="skill-pill">Mimari Yapılar</span>
+                </div>
+              </div>
+              <div class="skills-category">
+                <div class="skills-category-title">ORM &amp; Veri Erişimi</div>
+                <div class="skills-grid">
+                  <span class="skill-pill">Entity Framework Core</span>
+                  <span class="skill-pill">LINQ</span>
+                  <span class="skill-pill">Dapper</span>
+                </div>
+              </div>
+              <div class="skills-category">
+                <div class="skills-category-title">Veritabanı</div>
+                <div class="skills-grid">
+                  <span class="skill-pill">SQL Server</span>
+                  <span class="skill-pill">PostgreSQL</span>
+                </div>
+              </div>
+              <div class="skills-category">
+                <div class="skills-category-title">Frontend</div>
+                <div class="skills-grid">
+                  <span class="skill-pill">React</span>
+                  <span class="skill-pill">Next.js</span>
+                  <span class="skill-pill">TypeScript</span>
+                </div>
+              </div>
+              <div class="skills-category">
+                <div class="skills-category-title">DevOps &amp; Container</div>
+                <div class="skills-grid">
+                  <span class="skill-pill">Git</span>
+                  <span class="skill-pill">CI/CD</span>
+                  <span class="skill-pill">Terraform</span>
+                  <span class="skill-pill">Docker</span>
+                </div>
+              </div>
+              <div class="skills-category">
+                <div class="skills-category-title">Prensipler &amp; Süreç</div>
+                <div class="skills-grid">
+                  <span class="skill-pill">SOLID</span>
+                  <span class="skill-pill">Agile Süreçler</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- EĞİTİM -->
+          <section>
+            <h2 class="section-title">Eğitim</h2>
+            <div class="card">
+              <div class="education-item">
+                <div class="item-header">
+                  <div>
+                    <div class="item-title">Necmettin Erbakan Üniversitesi</div>
+                    <div class="item-subtitle">Matematik Bilgisayar Bilimleri</div>
+                  </div>
+                  <div class="item-meta">2018 – 2021</div>
+                </div>
+              </div>
+              <div class="education-item">
+                <div class="item-header">
+                  <div>
+                    <div class="item-title">Konya Teknik Üniversitesi</div>
+                    <div class="item-subtitle">Bilgisayar Programcılığı</div>
+                  </div>
+                  <div class="item-meta">2015 – 2018</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </main>
+
+      <footer>
+        <span>Bu sayfa GitHub Pages üzerinde statik olarak barındırılmak üzere tasarlandı.</span>
+        <span>Güncel teknoloji yığını: .NET Core · React · Next.js · Docker · Terraform</span>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
