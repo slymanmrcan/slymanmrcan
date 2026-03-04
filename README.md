@@ -1,65 +1,63 @@
-# Suleyman Mercan
+# Süleyman Mercan
+`Cloud & DevOps Practitioner` · `Backend Engineering`  
+`Turkey (UTC+3)`
 
-`Backend Engineer + DevOps Ownership`  
-`Turkey`
-
-> I build backend systems that survive production traffic, not only demo traffic.
+> I build infrastructure that defends itself, observes itself, and deploys itself.
 
 <p>
   <a href="https://github.com/slymanmrcan"><img alt="followers" src="https://img.shields.io/github/followers/slymanmrcan?style=flat-square"></a>
   <a href="https://github.com/slymanmrcan?tab=stars"><img alt="stars" src="https://img.shields.io/github/stars/slymanmrcan?style=flat-square"></a>
   <a href="https://linkedin.com/in/slymanmrcan"><img alt="linkedin" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="mailto:slymanmrcan@gmail.com"><img alt="email" src="https://img.shields.io/badge/Email-slymanmrcan%40gmail.com-222?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="https://slymanmrcan.github.io/terminal"><img alt="portfolio" src="https://img.shields.io/badge/Portfolio-terminal-222?style=flat-square&logo=gnometerminal&logoColor=white"></a>
 </p>
 
 ---
 
 ## Runtime Snapshot
-
 ```txt
-role      : Backend Engineer / DevOps
+role      : Cloud & DevOps Practitioner / Backend Engineer
 location  : Turkey (UTC+3)
-focus     : .NET Core APIs, Go services, CI/CD pipelines
-principle : reliability > complexity
+focus     : OCI infrastructure, Docker, CI/CD, Go services
+principle : manual is error
 ```
 
 ## Engineering Playbook
 
-- Design clean API boundaries and stable data models.
-- Automate build-test-deploy flow end-to-end.
-- Keep infra observable and easy to operate.
-- Prefer boring, maintainable systems over trendy complexity.
-
-## Current Build Map
-
-| Area | What I do |
-| --- | --- |
-| Backend | .NET Core API design, domain layering, data access |
-| DevOps | Dockerized workflows, GitHub Actions, Linux operations |
-| Infra | Terraform-based automation and deployment pipelines |
-| Product | Turn business rules into predictable services |
+- Provision hardened servers from scratch — firewall, SSH, Fail2ban, zero trust by default.
+- Containerize everything, automate the rest with GitHub Actions.
+- Keep infra observable: metrics, logs, and runbooks before anything breaks.
+- Write backend services that survive production, not only demo traffic.
 
 ---
 
 ## Project Ledger
 
-### `eduCenter` (Commercial / Private)
-Backend-first student management platform for institutions: enrollment, payments, exam workflows, and reporting modules.
+### [`techfeed`](https://techfeed.is-app.com) — RSS Aggregator (Go · Live)
+Backend service written in Go that fetches, parses and serves RSS feeds with title-based filtering.  
+Deployed on Oracle Cloud VPS · Docker Compose · Nginx · SSL (Certbot)
 
-### [`github-infra`](https://github.com/slymanmrcan/github-infra) (Open Source)
-Terraform-based GitHub repository automation and standardization project.
+### [`github-infra`](https://github.com/Bilgisayar-Kavramlari-Toplulugu/github-infra) — Terraform GitHub Manager (Open Source)
+Manages GitHub organization repositories, teams, permissions and members entirely through Terraform IaC.  
+Contributors define projects via `terraform.tfvars` — repos are auto-provisioned with standardized docs and access controls.
 
-### `PrivFlow` (Internal / Private)
-Role-based corporate feedback platform with secure workflow design.
+### [`server-guide`](https://suleymanmrcn.github.io/server-guide/) — VPS Hardening Handbook (Open Source Docs)
+Production-ready server setup handbook: OS hardening, 15-layer defense strategy, Docker security, Nginx, Prometheus/Grafana and emergency runbooks.
 
-> Note: `eduCenter` and `PrivFlow` are private/commercial projects. Source code will be shared after public release.
+### `eduCenter` — Student Management Platform (Private)
+Backend-first platform for institutions: enrollment, payments, exam workflows, reporting modules.
+
+### `PrivFlow` — Corporate Feedback Platform (Private)
+Role-based feedback system with secure workflow design.
+
+> Private projects will be open-sourced after public release.
 
 ---
 
-## Stack Core
+## Stack
 
 <p>
-  <img src="https://skillicons.dev/icons?i=dotnet,go,react,postgres,docker,githubactions,linux,git&perline=8" alt="skills">
+  <img src="https://skillicons.dev/icons?i=go,dotnet,react,postgres,docker,terraform,githubactions,linux,nginx,git,aws,cloudflare&perline=12" alt="skills">
 </p>
 
 ---
@@ -70,8 +68,9 @@ Role-based corporate feedback platform with secure workflow design.
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=slymanmrcan&show_icons=true&theme=dark&hide_border=true" alt="GitHub stats">
   <img width="49%" src="https://streak-stats.demolab.com?user=slymanmrcan&theme=dark&hide_border=true" alt="GitHub streak">
 </p>
+
 <p align="center">
-  <img width="95%" src="https://github-profile-trophy.vercel.app/?username=slymanmrcan&theme=darkhub&no-frame=true&row=1&column=7" alt="GitHub trophies">
+  <img width="95%" src="https://github-profile-trophy.vercel.app/?username=slymanmrcan&theme=darkhub&no-frame=true&row=1&column=7" alt="trophies">
 </p>
 
 <details>
@@ -84,5 +83,6 @@ Role-based corporate feedback platform with secure workflow design.
 
 ## Contact
 
-- LinkedIn: https://linkedin.com/in/slymanmrcan
+- LinkedIn: [linkedin.com/in/slymanmrcan](https://linkedin.com/in/slymanmrcan)
 - E-mail: slymanmrcan@gmail.com
+- Portfolio: [slymanmrcan.github.io/terminal](https://slymanmrcan.github.io/terminal)
