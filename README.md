@@ -1,5 +1,5 @@
 # Süleyman Mercan
-`Cloud & DevOps Practitioner` · `Backend Engineering`  
+`Cloud & DevOps Practitioner` · `Backend Dev`  
 `Turkey (UTC+3)`
 
 > I build infrastructure that defends itself, observes itself, and deploys itself.
@@ -65,19 +65,16 @@ Role-based feedback system with secure workflow design.
 ## GitHub Analytics
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=slymanmrcan&show_icons=true&theme=dark&hide_border=true" alt="GitHub stats">
-  <img width="49%" src="https://streak-stats.demolab.com?user=slymanmrcan&theme=dark&hide_border=true" alt="GitHub streak">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=slymanmrcan&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub stats">
+  <img width="49%" src="https://streak-stats.demolab.com?user=slymanmrcan&theme=tokyonight&hide_border=true" alt="GitHub streak">
 </p>
 
 <p align="center">
-  <img width="95%" src="https://github-profile-trophy.vercel.app/?username=slymanmrcan&theme=darkhub&no-frame=true&row=1&column=7" alt="trophies">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=slymanmrcan&theme=tokyonight&hide_border=true&layout=compact&cache_seconds=86400" alt="Top langs">
+  <img width="49%" src="https://github-profile-trophy.vercel.app/?username=slymanmrcan&theme=tokyonight&no-frame=true&row=1&column=4" alt="trophies">
 </p>
 
-<details>
-  <summary><b>Contribution graph</b></summary>
-  <br/>
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=slymanmrcan&theme=github-dark&hide_border=true" alt="activity graph">
-</details>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=slymanmrcan&theme=tokyo-night&hide_border=true&area=true" alt="activity graph">
 
 ---
 
