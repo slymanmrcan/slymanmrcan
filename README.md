@@ -50,7 +50,7 @@ Backend-first platform for institutions: enrollment, payments, exam workflows, r
 ### `PrivFlow` — Corporate Feedback Platform (Private)
 Role-based feedback system with secure workflow design.
 
-### [`qr-menu`](https://http://qr-menu.is-app.com) — QR Menu Platform (Private)
+### [`qr-menu`](https://qr-menu.is-app.com) — QR Menu Platform (Private)
 Digital QR menu system designed for cafes and restaurants with a mobile-first customer experience and admin management panel.
 Includes category and product management, image uploads, ordering support, customizable branding/themes and responsive UI architecture.
 Built with ASP.NET Core · Next.js · Docker · Nginx · PostgreSQL
