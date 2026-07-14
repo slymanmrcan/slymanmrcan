@@ -1,6 +1,5 @@
 
 # Süleyman Mercan 
-<svg viewBox="0 0 84 80" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="commit-stamp" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#a855f7"/></linearGradient></defs><circle cx="42" cy="40" r="28" stroke="url(#commit-stamp)" stroke-width="2"/><circle cx="42" cy="40" r="22" fill="#0B0E16" stroke="#303747" stroke-width="1" stroke-dasharray="3 3"/><text x="42" y="41" text-anchor="middle" dominant-baseline="central" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="21" font-weight="900" fill="#FFFFFF" letter-spacing="-0.03em">SM</text></svg>
 `Cloud & DevOps Practitioner` · `Backend Dev`  
 `Turkey (UTC+3)`
 
